@@ -85,19 +85,18 @@ nav li:hover {
 	flex-direction: column;
 	box-sizing: border-box;
 
-	color: black;
+	color: rgb(255, 254, 254);
 
 	background-color: rgba(192, 192, 192, 0.5);
 }
 
 .text-title h1 {
 	font-size: 5em;
-	text-shadow: 2px 2px 2px #2B398E;
+	text-shadow: 5px 5px 5px #000000;
 }
 
 .text-title p {
-	font-size: 2.5em;
-	text-shadow: 2px 2px 2px #2B398E;
+	text-shadow: 5px 5px 5px #000000;
 	text-align: center;
 }
 

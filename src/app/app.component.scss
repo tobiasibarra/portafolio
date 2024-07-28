@@ -154,6 +154,9 @@ hr {
     width: 50%;
     min-width: 160px;
     max-width: 200px;
+
+    position: relative;
+    left: -20px;
     
 }
 
@@ -472,4 +475,12 @@ strong {
   }
 
   
-  
+.desplegable{
+    background-color: #283560;
+     color: white;
+
+     width: 300px;
+     height: 30px;
+
+     border-radius: 10px;
+}

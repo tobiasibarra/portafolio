@@ -19,10 +19,11 @@
 </div>
 
 <div class="contenedor">
-    <div class="seccion3" id="sobremi">
+    <p id="sobremi"></p>
+    <div class="seccion3">
         <div class="scotch"></div>
         <div class="sobremi">
-            <h4 class="narrow narrowsubtitle">¿Quien soy?</h4>
+            <h4 class="narrow narrowsubtitle" >¿Quien soy?</h4>
             <hr class="hrs1 hrs3">
             <div class="foto">
                 <div class="squartle">
@@ -65,9 +66,9 @@
                                     <a>
                                         <strong>TemPo</strong>
                                         <p><br> Angular + NodeJS</p>
-                                        <a href="https://github.com/tobiasibarra/TemPo">
-                                        <button class="gradientcold">Ver más</button>
-                                    </a>
+                                        
+                                        <button class="gradientcold" (click)="infoTempo()">Ver más</button>
+                                    
                                     </a>
                                 </div>
                             </div>
@@ -116,7 +117,17 @@
         <hr class="hrs1 hrs4">
         <div id="exTab1" class="tabs-trabajos">
             <div class="tab-content clearfix tabcontenido">
-                <div class="tab-pane active" id="1a">
+
+                <div class="form-group">
+                    <select class="form-control" id="categorySelect" [(ngModel)]="selectedCategory" class="desplegable">
+                        <option value="todas">--Selecciona una opción--</option>
+                        <option value="front-end">Front-End</option>
+                        <option value="back-end">Back-End</option>
+                        <option value="base-datos">Base de Datos</option>
+                    </select>
+                </div>
+
+                <div *ngIf="selectedCategory === 'front-end' || selectedCategory === 'todas'" class="tools-list">
                     <div class="trabajos">
                         <div class="scotch scotch3"></div>
                         <div class="imagen hweb1" style="border: none; background-color: #2B4B7E;">
@@ -174,8 +185,8 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="tab-pane active" id="1a">
+    
+                <div *ngIf="selectedCategory === 'back-end' || selectedCategory === 'todas'" class="tools-list">
                     <div class="trabajos">
                         <div class="scotch scotch3"></div>
                         <div class="imagen hmg1" style="border: none; background-color: #2B4B7E;">
@@ -204,6 +215,9 @@
                             </div>
                         </div>
                     </div>
+                </div>
+    
+                <div *ngIf="selectedCategory === 'base-datos' || selectedCategory === 'todas'" class="tools-list">
                     <div class="trabajos">
                         <div class="scotch scotch3"></div>
                         <div class="imagen hmg3" style="border: none;">
@@ -237,8 +251,9 @@
             </div>
         </div>
         <br>
-        <button class="vermas gradientwarm">Ver más</button>
     </div>
+    
+    <hr>
     <div class="seccion3" id="contacto">
         <div class="scotch"></div>
         <div class="sobremi">

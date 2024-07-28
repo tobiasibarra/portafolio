@@ -1,19 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC:700|Roboto+Condensed:300');
 
-.h1,
-.h2,
-.h3,
-.h5,
-.h4,
-.h6,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Roboto Condensed', sans-serif;
-}
+
 
 .narrow {
     font-family: 'Amatic SC', cursive;
@@ -86,7 +73,6 @@ hr {
     background-color: #251f3d;
     border-bottom: 1px solid #251f3d;
     z-index: 10;
-    position: relative;
     text-transform: uppercase;
 
     display: flex;

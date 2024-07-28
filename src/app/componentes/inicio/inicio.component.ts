@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
+import * as AOS from 'aos'; // Ajuste en la importación
+import 'aos/dist/aos.css';
 
 @Component({
   selector: 'app-inicio',

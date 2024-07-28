@@ -89,8 +89,19 @@ hr {
     position: relative;
     text-transform: uppercase;
 
-    position: relative;
-    left: -30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: background-color 0.5s, padding 0.5s;
+
+    &.fixed {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: rgba(37, 31, 61, 0.7);
+        padding: 10px 0;
+    }
 }
 
 .topnav a {
@@ -100,23 +111,11 @@ hr {
     padding: 30px 16px 2px 16px;
     text-decoration: none;
     font-size: 13px;
-    transition: .2s
+    transition: .2s;
 }
 
 .topnav a:hover {
-    transition: .2s
-}
-
-.topnavlogo {
-    background-color: #251f3d;
-    border-radius: 1px;
-    padding: 8px 20px 8px 8px !important;
     transition: .2s;
-    border-radius: 0px 20px 20px 0px;
-}
-
-.topnavlogo:hover {
-    background-color: rgba(29, 140, 239, 0.1);
 }
 
 .topnavlink {
@@ -126,18 +125,13 @@ hr {
 }
 
 .topnavlink:hover {
-
     color: #FF7FAC;
     border-bottom: 1px solid #3F95FB !important;
 }
 
-
-
 .topnav .icon {
     display: none;
 }
-
-
 .float-right {
     float: right;
 }

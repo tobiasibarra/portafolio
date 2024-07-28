@@ -77,7 +77,6 @@ hr {
 
     display: flex;
     justify-content: center;
-    align-items: center;
 
     transition: background-color 0.5s, padding 0.5s;
 
@@ -100,35 +99,17 @@ hr {
     transition: .2s;
 }
 
-.topnav a:hover {
-    transition: .2s;
-}
 
-.topnavlink {
-    color: #1ED4CA;
-    margin: 0px 2px;
-    transition: .5s;
-}
+
 
 .topnavlink:hover {
     color: #FF7FAC;
     border-bottom: 1px solid #3F95FB !important;
 }
 
-.topnav .icon {
-    display: none;
-}
-.float-right {
-    float: right;
-}
 
-.float-left {
-    float: left;
-}
 
-.logo>img {
-    width: 30px;
-}
+
 
 .contenido1 {
     text-align: center;
@@ -140,9 +121,6 @@ hr {
     margin: 2px;
 }
 
-.contenido1 .emoji {
-    font-size: 20px;
-}
 
 .contenedor {
     background: #2B4B7E;
@@ -171,32 +149,9 @@ hr {
     padding: 1px 3px;
     text-shadow: 0px 0px 7px #460121;
     text-align: center;
-    width: 80%;
+    width: 50%;
     min-width: 160px;
     max-width: 200px;
-}
-
-.manito span {
-    font-size: 20px;
-}
-
-.manito p {
-    margin: 0px;
-    padding: 0px;
-}
-
-.manito i {
-    margin: 0px;
-    width: 100%;
-    font-size: 15px;
-    display: inline;
-}
-
-.manito i {
-    position: relative;
-    top: 0px;
-    transition: .2s;
-
 }
 
 .manito:hover>i {
@@ -372,98 +327,10 @@ h4 {
     top: 20px;
 }
 
-.seccion5 {
-    background: #283560;
-    text-align: center;
-    padding-bottom: 30px;
-    padding-top: 30px;
-}
 
-.seccion5 .contenido {
-    width: 60%;
-    margin: 0 auto;
-    margin-top: 20px;
-    color: #ffffff;
-}
 
-.seccion5 h5 {
-    color: #ffffff;
-}
 
-.mailfono,
-.rrss {
-    width: 40%;
-    display: inline-block;
-    text-align: left;
-    vertical-align: top;
-    color: #ffffff;
 
-}
-
-.mailfono .icon,
-.mailfono p,
-.rrss .icon,
-.rrss p {
-    display: inline-block;
-    text-align: center;
-
-}
-
-.mailfono i,
-.rrss i {
-    /*  border: 1px solid #22294C;
-  box-shadow: 1px 1px 0px #4b5d9a, inset 1px 1px 0px #4b5d9a;*/
-
-    width: 35px;
-    height: 35px;
-    padding-top: 7px;
-    font-size: 20px;
-    border-radius: 10px;
-    color: #283560;
-}
-
-.rrss {
-    width: 45%;
-    display: inline-block;
-}
-
-.divisor {
-    border: .5px solid #2B4B7E;
-    display: inline-block;
-    height: 170px;
-    width: 0px;
-    margin: 0px 10px;
-}
-
-.footer {
-    text-align: center;
-    padding-top: 30px;
-}
-
-.footer img {
-    width: 40px;
-    margin-bottom: 10px;
-}
-
-.rosa {
-    color: #FF7FAC;
-}
-
-.naranjo {
-    color: #FFA891;
-}
-
-.celeste {
-    color: #1ED4CA;
-}
-
-.azul {
-    color: #3F95FB;
-}
-
-.blanco {
-    color: #ffffff;
-}
 
 .gradientcold {
     background: rgb(30, 212, 202);
@@ -490,180 +357,9 @@ h4 {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff9277', endColorstr='#f96384', GradientType=1);
 }
 
-@media screen and (max-width: 600px) {
-    .foto {
-        width: 100%;
-        margin-bottom: 20px;
-        margin-top: 20px;
-        text-align: center;
-    }
-
-    .sobremi .parrafos {
-        width: 85%;
-        text-align: center;
-        margin-left: 0px;
-    }
-
-    .seccion5 .contenido {
-        width: 80%;
-    }
-
-    .mailfono,
-    .rrss {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    .divisor {
-        height: 0px;
-        width: 170px;
-        margin-bottom: 15px;
-    }
-
-    .topnavlogo:hover {
-        background: transparent;
-    }
-}
-
-.seccion4 .tab-content>.active {
-    text-align: center;
-}
 
 
-#exTab1 .nav-pills>li>a {
-    border-radius: 0;
-}
 
-#exTab1 .tab-content {
-    color: white;
-}
-
-.topnav {
-    width: 80%;
-    margin: 0 auto;
-}
-
-@media screen and (max-width: 1100px) {
-    .topnav {
-        width: 90%;
-        margin: 0 auto;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .topnav {
-        width: 100%;
-        margin: 0 auto;
-    }
-}
-
-.nav-pills>li>a {
-    border-bottom: 1x solid transparent;
-    transition: .2s;
-}
-
-.nav-pills>li.active>a,
-.nav-pills>li.active>a:focus,
-.nav-pills>li.active>a:hover {
-    background: transparent;
-    padding: 18px 15px 3px 15px;
-    border-bottom: 1px solid #1ED4CA;
-}
-
-.nav>li>a {
-    padding: 18px 15px 3px 15px;
-    border-bottom: 1px solid transparent;
-}
-
-.nav>li>a:focus,
-.nav>li>a:hover {
-    background: transparent;
-}
-
-.nav-pills>li>a:hover {
-    border-bottom: 1px solid #fb7daa;
-}
-
-
-.nav-pills {
-    display: inline-block;
-    text-align: center;
-}
-
-.tabs-trabajos {
-    text-align: center;
-}
-
-
-@supports (mix-blend-mode: multiply) {
-    .hallucination-effect {
-        position: relative;
-        overflow: hidden;
-        background-color: magenta;
-        background-blend-mode: screen;
-    }
-
-    .hallucination-effect:before,
-    .hallucination-effect:after {
-        display: block;
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: inherit;
-        mix-blend-mode: multiply;
-        transform: scale(1.02);
-        transition: .3s;
-    }
-
-    .hallucination-effect:before {
-        background-color: yellow;
-        background-blend-mode: screen;
-        transform-origin: top left;
-    }
-
-    .hallucination-effect:after {
-        background-color: cyan;
-        background-blend-mode: screen;
-        transform-origin: bottom right;
-    }
-
-    .hallucination-effect:hover {
-        position: relative;
-        overflow: hidden;
-        background-color: magenta;
-        background-blend-mode: screen;
-    }
-
-    .hallucination-effect:hover:before,
-    .hallucination-effect:hover:after {
-        display: block;
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: inherit;
-        mix-blend-mode: multiply;
-        transform: scale(1);
-    }
-
-    .hallucination-effect:hover:before {
-        background-color: yellow;
-        background-blend-mode: screen;
-        transform-origin: top left;
-    }
-
-    .hallucination-effect:hover:after {
-        background-color: cyan;
-        background-blend-mode: screen;
-        transform-origin: bottom right;
-    }
-}
 
 /* FOTOS */
 .fotoperfil {
@@ -767,4 +463,5 @@ strong {
     font-weight: bold; /* Asegúrate de que no estás sobrescribiendo el estilo predeterminado */
   }
 
+  
   

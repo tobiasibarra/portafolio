@@ -14,11 +14,7 @@ export class InicioComponent {
  
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
 
-  ngOnInit(): void {
-    if (isPlatformBrowser(this.platformId)) {
-      AOS.init();
-    }
-  }
+ 
 
   @HostListener('window:scroll', [])
   onWindowScroll(): void {
@@ -33,11 +29,16 @@ export class InicioComponent {
   }
 
   descargarCV(): void {
+    console.log('Ejecutando descargarCV en el navegador');
     if (isPlatformBrowser(this.platformId)) {
+      console.log('Ejecutando descargarCV en el navegador');
       const link = document.createElement('a');
-      link.href = 'assets/TobiasIbarra_CV.pdf';
+      link.href = 'http://localhost:4200/assets/TobiasIbarra_CV.pdf'; 
+      link.target = '_blank';  // Asegúrate de que se abra en una nueva pestaña
       link.download = 'TobiasIbarra_CV.pdf';
+      document.body.appendChild(link);
       link.click();
+      document.body.removeChild(link);  // Remueve el enlace después de la descarga
     }
   }
 }
